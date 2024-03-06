@@ -6,14 +6,7 @@ A superior fork that respects the **bee**.
 
 No more 'cooking' cute animals, no more cringe 2020 'amogus' references for braindead zoom zooms. Just pure honey 🍯.
 
-![don't forget to bee-lieve](assets/bee.jpg | width=400)
-
 <img src="assets/bee.jpg" width="500"/>
-
- <figure>
-  <img src="assets/bee.jpg" alt="Trulli" style="width:100%">
-  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-</figure> 
 
 ### Installation and Configuration
 
