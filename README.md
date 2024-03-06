@@ -8,6 +8,8 @@ No more 'cooking' cute animals, no more cringe 2020 'amogus' references for brai
 
 ![don't forget to bee-lieve](assets/bee.jpg | width=400)
 
+<img src="assets/bee.jpg" width="500"/>
+
 ### Installation and Configuration
 
 ```lua
