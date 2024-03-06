@@ -6,7 +6,7 @@ A superior fork that respects the **bee**.
 
 No more 'cooking' cute animals, no more cringe 2020 'amogus' references for braindead zoom zooms. Just pure honey 🍯.
 
-![don't forget to bee-lieve|300](assets/bee.jpg)
+![don't forget to bee-lieve](assets/bee.jpg | width=400)
 
 ### Installation and Configuration
 
