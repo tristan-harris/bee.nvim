@@ -27,3 +27,7 @@ You can modify the bee's buzziness in the `config` function like so.
 -- two buzzes per second
 require("bee").summon(2)
 ```
+
+### Additional
+
+> Don't forget to bee-lieve.
