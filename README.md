@@ -1,10 +1,12 @@
 # bee.nvim
 
+### Overview
+
 A superior fork that respects the **bee**.
 
 No more 'cooking' cute animals, no more cringe 2020 'amogus' references for braindead zoom zooms. Just pure honey 🍯.
 
-🐝🐝🐝 Bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz... 🐝🐝🐝
+![don't forget to bee-lieve](assets/bee.jpg)
 
 ### Installation and Configuration
 
@@ -19,9 +21,9 @@ No more 'cooking' cute animals, no more cringe 2020 'amogus' references for brai
 }
 ```
 
-You can modify the bee's buzziness like so.
+You can modify the bee's buzziness in the `config` function like so.
 
 ```lua
 -- two buzzes per second
-vim.keymap.set('n', '<leader>db', function() require("bee").summon(2) end, {})
+require("bee").summon(2)
 ```
