@@ -1,40 +1,27 @@
-# duck.nvim
+# bee.nvim
 
-A duck that waddles between your codes
+A superior fork that respects the **bee**.
 
-![Peek 2021-11-18 15-43](https://user-images.githubusercontent.com/77913442/142396581-787616c0-92c9-4ddd-aa15-7bd218f6011b.gif)
+No more 'cooking' cute animals, no more cringe 2020 'amogus' references for braindead zoom zooms. Just pure honey 🍯.
 
-> Coding? release the duck. <br />
-> bored? release the duck. <br />
-> not bored? release the duck. <br />
+🐝🐝🐝 Bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz... 🐝🐝🐝
 
-### Install and Configure
+### Installation and Configuration
 
 ```lua
 {
-    'tamton-aquib/duck.nvim',
+    'tristan-harris/bee.nvim',
     config = function()
-        vim.keymap.set('n', '<leader>dd', function() require("duck").hatch() end, {})
-        vim.keymap.set('n', '<leader>dk', function() require("duck").cook() end, {})
-        vim.keymap.set('n', '<leader>da', function() require("duck").cook_all() end, {})
+        vim.keymap.set('n', '<leader>db', function() require("bee").summon() end, {desc="Summon [b]ee"})
+        vim.keymap.set('n', '<leader>dh', function() require("bee").fly_home() end, {desc="Send bee [h]ome"}) -- h for home/hive
+        vim.keymap.set('n', '<leader>da', function() require("bee").all_fly_home() end, {desc="Send [a]ll bees home"})
     end
 }
 ```
 
-To set custom character:
-```lua
-nnoremap <leader>dd :lua require("duck").hatch("ඞ")<CR>
-```
-> popular candidates: 🦆 ඞ  🦀 🐈 🐎 🦖 🐤 
+You can modify the bee's buzziness like so.
 
-You can also specify how fast a duck moves (measured in steps per second):
 ```lua
-vim.keymap.set('n', '<leader>dd', function() require("duck").hatch("🦆", 10) end, {}) -- A pretty fast duck
-vim.keymap.set('n', '<leader>dc', function() require("duck").hatch("🐈", 0.75) end, {}) -- Quite a mellow cat
+-- two buzzes per second
+vim.keymap.set('n', '<leader>db', function() require("bee").summon(2) end, {})
 ```
-
-### Features
-- can release multiple ducks.
-- does not load on startup.
-- Light weight, <100 LOC
-- Its a duck
