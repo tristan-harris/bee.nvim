@@ -2,10 +2,6 @@
 
 ### Overview
 
-A superior fork that respects the **bee**.
-
-No more 'cooking' cute animals, no more cringe 2020 'amogus' references for braindead zoom zooms. Just pure honey 🍯.
-
 <img src="assets/bee.jpg" width="500"/>
 
 ### Installation and Configuration
