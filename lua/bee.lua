@@ -1,3 +1,6 @@
+-- added changes from **** repository up to commit d8a6b08
+-- https://github.com/tamton-aquib/duck.nvim/commit/d8a6b08af440e5a0e2b3b357e2f78bb1883272cd
+
 local M = {}
 M.bees_list = {}
 local conf = {character="🐝", speed=10, width=2, height=1, color="none", blend=100}
@@ -11,7 +14,12 @@ local buzz = function(bee, speed)
     vim.loop.timer_start(timer, 1000, buzz_period, vim.schedule_wrap(function()
         if vim.api.nvim_win_is_valid(bee) then
             local config = vim.api.nvim_win_get_config(bee)
-            local col, row = config["col"][false], config["row"][false]
+            local col, row = 0, 0
+            if vim.version().minor < 10 then -- Neovim 0.9
+                col, row = config["col"][false], config["row"][false]
+            else -- Neovim 0.10
+                col, row = config["col"], config["row"]
+            end
 
             math.randomseed(os.time()*bee)
             local angle = 2 * math.pi * math.random()
